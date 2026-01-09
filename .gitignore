@@ -1,0 +1,35 @@
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+
+# --- Neovim / Lazy.nvim ---
+.config/nvim/lazy/
+lazy-lock.json
+
+# --- Zsh ---
+.zhistory
+.zsh_history
+# zshのキャッシュ（補完データなど）
+.zcompdump*
+
+# --- AWS / Credentials ---
+.aws/
+credentials
+*.pem
+*.pub
+
+# --- SSH ---
+.ssh/
+id_ed25519
+id_rsa
+
+# --- Language Specific ---
+node_modules/
+dist/
+bin/
+*.exe
+
+# --- Local Settings ---
+*.local
+.envrc
+.env
