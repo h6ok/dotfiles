@@ -91,3 +91,7 @@ function tnm() {
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
 
+# ==============================================================================
+# 7. ssh agent bitwarden
+# ==============================================================================
+SSH_AUTH_SOCK=/Users/taharahiroaki/.bitwarden-ssh-agent.sock
