@@ -85,6 +85,13 @@ function tnm() {
     echo "Created module: $module_name"
 }
 
+# Java template
+alias mvin='mvn archetype:generate \
+  -DgroupId=com.example \
+  -DartifactId=example \
+  -DarchetypeArtifactId=maven-archetype-quickstart \
+  -DinteractiveMode=false'
+
 # ==============================================================================
 # 6. Tools Initialization
 # ==============================================================================
@@ -95,3 +102,10 @@ eval "$(direnv hook zsh)"
 # 7. ssh agent bitwarden
 # ==============================================================================
 SSH_AUTH_SOCK=/Users/taharahiroaki/.bitwarden-ssh-agent.sock
+
+# ==============================================================================
+# 7. read .zshrc.local
+# ==============================================================================
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
